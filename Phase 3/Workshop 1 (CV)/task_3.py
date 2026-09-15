@@ -47,7 +47,7 @@ for contour in contours:
     if vertices == 3:
         shape = "Triangle"
     elif vertices == 4:
-        # checks for square by the aspect ratio (self explanatory)
+        # checks for square by the aspect ratio (self-explanatory)
         x, y, w, h = cv2.boundingRect(approx)
         aspect_ratio = w / float(h)
         if 0.9 <= aspect_ratio <= 1.1:

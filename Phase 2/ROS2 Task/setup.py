@@ -3,7 +3,7 @@ from glob import glob
 
 from setuptools import find_packages, setup
 
-package_name = 'workshop2'
+package_name = 'ROS2 Task'
 
 setup(
     name=package_name,
@@ -29,9 +29,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'turtle_controller = workshop2.turtle_controller:main',
-            'go_to_goal = workshop2.go_to_goal:main',
-            'turtle_toggle_client = workshop2.turtle_toggle_client:main',
+            'turtle_controller = ROS2 Task.turtle_controller:main',
+            'go_to_goal = ROS2 Task.go_to_goal:main',
+            'turtle_toggle_client = ROS2 Task.turtle_toggle_client:main',
         ],
     },
 )
